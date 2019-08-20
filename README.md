@@ -22,6 +22,8 @@ export FLASK_ENV=development
 flask run
 ```
 
+The app looks for image files in the `static`directory. It will analyse every image it finds, every time someone visits the home page.
+
 Visit root local host to extract colours for all images and provide an HTML summary.
 
 e.g. http://127.0.0.1:5000/
