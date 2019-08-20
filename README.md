@@ -10,7 +10,7 @@ Install the requirements with pip:
 pip3 install -r requirements.txt --ignore-installed
 ```
 
-Note the ignore-installed flag -- colorgram has on occasion not installed properly to a virtualenv without it for me.
+Note the `ignore-installed` flag as colorgram has on occasion not installed properly to a virtualenv without it for me.
 
 # Running the app
 
@@ -22,12 +22,12 @@ export FLASK_ENV=development
 flask run
 ```
 
-The app looks for image files in the `static`directory. It will analyse every image it finds, every time someone visits the home page.
+As it is currently setup, the app looks for image files in the `static` directory. It will analyse every image it finds, every time someone visits either the home URL or `/api`.
 
 Visit root local host to extract colours for all images and provide an HTML summary.
 
 e.g. http://127.0.0.1:5000/
 
-Visit /api for a data view.
+Visit `/api` for a data view.
 
 e.g. http://127.0.0.1:5000/api
